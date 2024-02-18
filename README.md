@@ -1,89 +1,58 @@
-[![PyPI version](https://img.shields.io/pypi/v/ansible-core.svg)](https://pypi.org/project/ansible-core)
-[![Docs badge](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://docs.ansible.com/ansible/latest/)
-[![Chat badge](https://img.shields.io/badge/chat-IRC-brightgreen.svg)](https://docs.ansible.com/ansible/latest/community/communication.html)
-[![Build Status](https://dev.azure.com/ansible/ansible/_apis/build/status/CI?branchName=devel)](https://dev.azure.com/ansible/ansible/_build/latest?definitionId=20&branchName=devel)
-[![Ansible Code of Conduct](https://img.shields.io/badge/code%20of%20conduct-Ansible-silver.svg)](https://docs.ansible.com/ansible/latest/community/code_of_conduct.html)
-[![Ansible mailing lists](https://img.shields.io/badge/mailing%20lists-Ansible-orange.svg)](https://docs.ansible.com/ansible/latest/community/communication.html#mailing-list-information)
-[![Repository License](https://img.shields.io/badge/license-GPL%20v3.0-brightgreen.svg)](COPYING)
-[![Ansible CII Best Practices certification](https://bestpractices.coreinfrastructure.org/projects/2372/badge)](https://bestpractices.coreinfrastructure.org/projects/2372)
-
-# Ansible
-
-Ansible is a radically simple IT automation system. It handles
-configuration management, application deployment, cloud provisioning,
-ad-hoc task execution, network automation, and multi-node orchestration. Ansible makes complex
-changes like zero-downtime rolling updates with load balancers easy. More information on the Ansible [website](https://ansible.com/).
-
-## Design Principles
-
-* Have an extremely simple setup process with a minimal learning curve.
-* Manage machines quickly and in parallel.
-* Avoid custom-agents and additional open ports, be agentless by
-  leveraging the existing SSH daemon.
-* Describe infrastructure in a language that is both machine and human
-  friendly.
-* Focus on security and easy auditability/review/rewriting of content.
-* Manage new remote machines instantly, without bootstrapping any
-  software.
-* Allow module development in any dynamic language, not just Python.
-* Be usable as non-root.
-* Be the easiest IT automation system to use, ever.
-
-## Use Ansible
-
-You can install a released version of Ansible with `pip` or a package manager. See our
-[installation guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) for details on installing Ansible
-on a variety of platforms.
-
-Power users and developers can run the `devel` branch, which has the latest
-features and fixes, directly. Although it is reasonably stable, you are more likely to encounter
-breaking changes when running the `devel` branch. We recommend getting involved
-in the Ansible community if you want to run the `devel` branch.
-
-## Get Involved
-
-* Read [Community Information](https://docs.ansible.com/ansible/latest/community) for all
-  kinds of ways to contribute to and interact with the project,
-  including mailing list information and how to submit bug reports and
-  code to Ansible.
-* Join a [Working Group](https://github.com/ansible/community/wiki),
-  an organized community devoted to a specific technology domain or platform.
-* Submit a proposed code update through a pull request to the `devel` branch.
-* Talk to us before making larger changes
-  to avoid duplicate efforts. This not only helps everyone
-  know what is going on, but it also helps save time and effort if we decide
-  some changes are needed.
-* For a list of email lists, IRC channels and Working Groups, see the
-  [Communication page](https://docs.ansible.com/ansible/latest/community/communication.html)
-
-## Coding Guidelines
-
-We document our Coding Guidelines in the [Developer Guide](https://docs.ansible.com/ansible/devel/dev_guide/). We particularly suggest you review:
-
-* [Contributing your module to Ansible](https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_checklist.html)
-* [Conventions, tips, and pitfalls](https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_best_practices.html)
-
-## Branch Info
-
-* The `devel` branch corresponds to the release actively under development.
-* The `stable-2.X` branches correspond to stable releases.
-* Create a branch based on `devel` and set up a [dev environment](https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_general.html#common-environment-setup) if you want to open a PR.
-* See the [Ansible release and maintenance](https://docs.ansible.com/ansible/devel/reference_appendices/release_and_maintenance.html) page for information about active branches.
-
-## Roadmap
-
-Based on team and community feedback, an initial roadmap will be published for a major or minor version (ex: 2.7, 2.8).
-The [Ansible Roadmap page](https://docs.ansible.com/ansible/devel/roadmap/) details what is planned and how to influence the roadmap.
-
-## Authors
-
-Ansible was created by [Michael DeHaan](https://github.com/mpdehaan)
-and has contributions from over 5000 users (and growing). Thanks everyone!
-
-[Ansible](https://www.ansible.com) is sponsored by [Red Hat, Inc.](https://www.redhat.com)
-
-## License
-
-GNU General Public License v3.0 or later
-
-See [COPYING](COPYING) to see the full text.
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><a href="https://pypi.org/project/ansible-core" rel="nofollow"><img src="https://camo.githubusercontent.com/a0333ce6507dacf774b690600b55916357097c064a2e216a41e5d624cb0ee323/68747470733a2f2f696d672e736869656c64732e696f2f707970692f762f616e7369626c652d636f72652e737667" alt="PyPI版本" data-canonical-src="https://img.shields.io/pypi/v/ansible-core.svg" style="max-width: 100%;"></a>
+<a href="https://docs.ansible.com/ansible/latest/" rel="nofollow"><img src="https://camo.githubusercontent.com/c3eb421d08c0bd1532c0202cb4f553ff980a137542649c5efb8070675aa7d8ae/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646f63732d6c61746573742d627269676874677265656e2e737667" alt="文档徽章" data-canonical-src="https://img.shields.io/badge/docs-latest-brightgreen.svg" style="max-width: 100%;"></a>
+<a href="https://docs.ansible.com/ansible/latest/community/communication.html" rel="nofollow"><img src="https://camo.githubusercontent.com/2fc093150e7c790d106dd0884bc1301a9b69f7050be89b150ee5840a37148bd0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636861742d4952432d627269676874677265656e2e737667" alt="聊天徽章" data-canonical-src="https://img.shields.io/badge/chat-IRC-brightgreen.svg" style="max-width: 100%;"></a>
+<a href="https://dev.azure.com/ansible/ansible/_build/latest?definitionId=20&amp;branchName=devel" rel="nofollow"><img src="https://camo.githubusercontent.com/d5c24640bacf79347e9b82096cd5da4ce8f841af158b4d0b68f0d29dcd6073e9/68747470733a2f2f6465762e617a7572652e636f6d2f616e7369626c652f616e7369626c652f5f617069732f6275696c642f7374617475732f43493f6272616e63684e616d653d646576656c" alt="构建状态" data-canonical-src="https://dev.azure.com/ansible/ansible/_apis/build/status/CI?branchName=devel" style="max-width: 100%;"></a>
+<a href="https://docs.ansible.com/ansible/latest/community/code_of_conduct.html" rel="nofollow"><img src="https://camo.githubusercontent.com/ed9f5de58c4d0a74ba9a1fd6c07dc7c2c112cff37f26fb32b2ddbca6dccd837d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64652532306f66253230636f6e647563742d416e7369626c652d73696c7665722e737667" alt="Ansible 行为准则" data-canonical-src="https://img.shields.io/badge/code%20of%20conduct-Ansible-silver.svg" style="max-width: 100%;"></a>
+<a href="https://docs.ansible.com/ansible/latest/community/communication.html#mailing-list-information" rel="nofollow"><img src="https://camo.githubusercontent.com/f7da2f34487fa4e8b95e536a697ff1c01ff47feca18739c72d98418c0aebfdf3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6d61696c696e672532306c697374732d416e7369626c652d6f72616e67652e737667" alt="Ansible 邮件列表" data-canonical-src="https://img.shields.io/badge/mailing%20lists-Ansible-orange.svg" style="max-width: 100%;"></a>
+<a href="/ansible/ansible/blob/devel/COPYING"><img src="https://camo.githubusercontent.com/c3a72dfbe68eed2b645f82d0b92169a170a191bcd4232315082f67702f856b92/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d47504c25323076332e302d627269676874677265656e2e737667" alt="存储库许可证" data-canonical-src="https://img.shields.io/badge/license-GPL%20v3.0-brightgreen.svg" style="max-width: 100%;"></a>
+<a href="https://bestpractices.coreinfrastructure.org/projects/2372" rel="nofollow"><img src="https://camo.githubusercontent.com/32dc6a90c81927f3f80cdfe35c011157cef4ee4d806c86c292e4eac5262d13ac/68747470733a2f2f626573747072616374696365732e636f7265696e6672617374727563747572652e6f72672f70726f6a656374732f323337322f6261646765" alt="Ansible CII 最佳实践认证" data-canonical-src="https://bestpractices.coreinfrastructure.org/projects/2372/badge" style="max-width: 100%;"></a></p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-ansible" class="anchor" aria-hidden="true" tabindex="-1" href="#ansible"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安西布尔</font></font></h1>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ansible 是一个极其简单的 IT 自动化系统。</font><font style="vertical-align: inherit;">它处理配置管理、应用程序部署、云配置、临时任务执行、网络自动化和多节点编排。</font><font style="vertical-align: inherit;">Ansible 使复杂的更改变得容易，例如使用负载均衡器进行零停机滚动更新。</font><font style="vertical-align: inherit;">更多信息请访问 Ansible</font></font><a href="https://ansible.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-design-principles" class="anchor" aria-hidden="true" tabindex="-1" href="#design-principles"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设计原则</font></font></h2>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设置过程极其简单，学习曲线极短。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速、并行地管理机器。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">避免自定义代理和额外的开放端口，通过利用现有的 SSH 守护程序实现无代理。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用机器和人类都友好的语言描述基础设施。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">专注于内容的安全性和易于审核/审查/重写。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">立即管理新的远程计算机，无需启动任何软件。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">允许使用任何动态语言进行模块开发，而不仅仅是 Python。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以非 root 身份使用。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">成为有史以来最容易使用的 IT 自动化系统。</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-use-ansible" class="anchor" aria-hidden="true" tabindex="-1" href="#use-ansible"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Ansible</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"></font><code>pip</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以使用包管理器</font><font style="vertical-align: inherit;">安装 Ansible 的发布版本。</font><font style="vertical-align: inherit;">有关在各种平台上安装 Ansible 的详细信息，</font><font style="vertical-align: inherit;">请参阅我们的
+</font></font><a href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装指南。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高级用户和开发人员可以</font></font><code>devel</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">直接运行具有最新功能和修复的分支。</font><font style="vertical-align: inherit;">尽管它相当稳定，但在运行分支时您更有可能遇到重大更改</font></font><code>devel</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">如果您想运行该分支，我们建议您加入 Ansible 社区</font></font><code>devel</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-get-involved" class="anchor" aria-hidden="true" tabindex="-1" href="#get-involved"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参与其中</font></font></h2>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阅读</font></font><a href="https://docs.ansible.com/ansible/latest/community" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区信息，</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解为项目做出贡献并与之交互的各种方式，包括邮件列表信息以及如何向 Ansible 提交错误报告和代码。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入</font></font><a href="https://github.com/ansible/community/wiki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工作组</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，这是一个致力于特定技术领域或平台的有组织的社区。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过向分支请求请求提交建议的代码更新</font></font><code>devel</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在进行较大的更改之前请先与我们联系，以避免重复工作。</font><font style="vertical-align: inherit;">这不仅可以帮助每个人了解正在发生的事情，而且如果我们决定需要进行一些更改，也有助于节省时间和精力。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关电子邮件列表、IRC 频道和工作组的列表，请参阅
+</font></font><a href="https://docs.ansible.com/ansible/latest/community/communication.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通信页面</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-coding-guidelines" class="anchor" aria-hidden="true" tabindex="-1" href="#coding-guidelines"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编码指南</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们在</font></font><a href="https://docs.ansible.com/ansible/devel/dev_guide/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发人员指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中记录了我们的编码指南。</font><font style="vertical-align: inherit;">我们特别建议您查看：</font></font></p>
+<ul dir="auto">
+<li><a href="https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_checklist.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将您的模块贡献给 Ansible</font></font></a></li>
+<li><a href="https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_best_practices.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">惯例、技巧和陷阱</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-branch-info" class="anchor" aria-hidden="true" tabindex="-1" href="#branch-info"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分行信息</font></font></h2>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该</font></font><code>devel</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分支对应于正在积极开发的版本。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些</font></font><code>stable-2.X</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分支对应于稳定版本。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果要开PR的话，</font><font style="vertical-align: inherit;">创建一个基于的分支</font></font><code>devel</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并设置</font></font><a href="https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_general.html#common-environment-setup" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发环境。</font></font></a><font style="vertical-align: inherit;"></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关活动分支的信息，</font><font style="vertical-align: inherit;">请参阅</font></font><a href="https://docs.ansible.com/ansible/devel/reference_appendices/release_and_maintenance.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ansible 发布和维护页面。</font></font></a><font style="vertical-align: inherit;"></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-roadmap" class="anchor" aria-hidden="true" tabindex="-1" href="#roadmap"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路线图</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据团队和社区的反馈，将发布主要或次要版本（例如：2.7、2.8）的初始路线图。</font><font style="vertical-align: inherit;">Ansible</font></font><a href="https://docs.ansible.com/ansible/devel/roadmap/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路线图页面</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">详细介绍了计划内容以及如何影响路线图。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-authors" class="anchor" aria-hidden="true" tabindex="-1" href="#authors"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作者</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://github.com/mpdehaan"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ansible 由Michael DeHaan</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建</font><font style="vertical-align: inherit;">
+，拥有超过 5000 名用户（并且还在不断增加）的贡献。</font><font style="vertical-align: inherit;">感谢大家！</font></font></p>
+<p dir="auto"><a href="https://www.ansible.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ansible由</font></font></a><font style="vertical-align: inherit;"><a href="https://www.redhat.com" rel="nofollow"><font style="vertical-align: inherit;">红帽公司</font></a><font style="vertical-align: inherit;">赞助。</font></font><a href="https://www.redhat.com" rel="nofollow"><font style="vertical-align: inherit;"></font></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-license" class="anchor" aria-hidden="true" tabindex="-1" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GNU 通用公共许可证 v3.0 或更高版本</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="/ansible/ansible/blob/devel/COPYING"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">复制</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以查看全文。</font></font></p>
+</article></div>
